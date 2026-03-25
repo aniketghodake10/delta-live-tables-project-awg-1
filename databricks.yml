@@ -26,7 +26,7 @@ targets:
     default: true
     presets:
       # This will prepend "XXX" to your resources
-      name_prefix: "free-edition_"
+      name_prefix: "free-edition_${workspace.current_user.short_name}_"
     workspace:
       host: https://dbc-d3e79eb4-b550.cloud.databricks.com/
   # dev:
