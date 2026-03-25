@@ -1,0 +1,71 @@
+resources:
+  pipelines:
+    pipeline_dlt_test_learning_awg_1:
+      name: DLT-test-learning-awg-1
+      libraries:
+        - glob:
+            include: ../resources/pipelines/DLT-test-learning-awg-1/transformations/**
+      schema: default
+      continuous: false
+      development: false
+      photon: true
+      channel: CURRENT
+      catalog: workspace
+      serverless: true
+      root_path: ../resources/pipelines/DLT-test-learning-awg-1
+
+    pipeline_dlt_tutorial_pipeline:
+      name: DLT_Tutorial_Pipeline
+      libraries:
+        - glob:
+            include: ../resources/notebooks/SWITCH/AnshLambaYT/DeltaLiveTables/DLT_Root/transformations_SourceCode/**
+      schema: dlt_schema
+      continuous: false
+      development: false
+      photon: true
+      channel: CURRENT
+      catalog: delta_live_tables_catalog
+      serverless: true
+      root_path: ../resources/notebooks/SWITCH/AnshLambaYT/DeltaLiveTables/DLT_Root
+
+    pipeline_dlt_pipeline_learn_9sep:
+      name: dlt_pipeline_learn_9SEP
+      libraries:
+        - glob:
+            include: ../resources/notebooks/SWITCH/AnshLambaYT/DeltaLiveTables/DLT_9SEP_Root/dlt_pipeline_learn_9SEP/transformations/**
+      schema: dlt_schema_9sep
+      continuous: false
+      development: false
+      photon: true
+      channel: CURRENT
+      catalog: delta_live_tables_catalog
+      serverless: true
+      root_path: ../resources/notebooks/SWITCH/AnshLambaYT/DeltaLiveTables/DLT_9SEP_Root/dlt_pipeline_learn_9SEP
+
+    pipeline_dlt_to_dp_new_syntax:
+      name: DLT to DP new syntax
+      libraries:
+        - glob:
+            include: ../resources/pipelines/DLT to DP new syntax/transformations/**
+      schema: dlt_py_schema1
+      continuous: false
+      development: false
+      photon: true
+      channel: CURRENT
+      catalog: workspace
+      serverless: true
+      root_path: ../resources/pipelines/DLT to DP new syntax
+    
+    pipeline_dlt_sql_awg_1_2026_03_16_17_21:
+      name: DLT SQL awg-1 2026-03-16 17-21
+      libraries:
+        - glob:
+            include: ../resources/pipelines/New Pipeline 2026-03-16 17:21/transformations/**
+      schema: dlt_sql_schema1
+      continuous: false
+      development: false
+      photon: true
+      channel: CURRENT
+      catalog: workspace
+      serverless: true
+      root_path: ../resources/pipelines/New Pipeline 2026-03-16 17:21
