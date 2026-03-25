@@ -60,7 +60,7 @@ resources:
       name: DLT SQL awg-1 2026-03-16 17-21
       libraries:
         - glob:
-            include: ../resources/pipelines/New Pipeline 2026-03-16 17:21/transformations/**
+            include: ../resources/pipelines/New Pipeline 2026-03-16 17-21/transformations/**
       schema: dlt_sql_schema1
       continuous: false
       development: false
@@ -68,4 +68,4 @@ resources:
       channel: CURRENT
       catalog: workspace
       serverless: true
-      root_path: ../resources/pipelines/New Pipeline 2026-03-16 17:21
+      root_path: ../resources/pipelines/New Pipeline 2026-03-16 17-21
